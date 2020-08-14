@@ -1,0 +1,42 @@
+img {
+  border-radius: 8%;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto 6rem 2rem;
+  grid-template-areas: "poster"
+                        "title"
+                        "add";
+  justify-items: center;
+}
+
+.title {
+  composes: subTitle from "./../../Typo.module.css";
+  font-size: 1.5rem;
+  grid-area: title;
+}
+
+.movie {
+  grid-row-start: auto;
+}
+
+.buttonAdd {
+  color:white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 2rem;
+  padding: .2rem .8rem;
+  width: 8rem;
+}
+.buttonAdd:hover {
+  color: var(--primary-color);
+  background-color: white;
+   
+}
+

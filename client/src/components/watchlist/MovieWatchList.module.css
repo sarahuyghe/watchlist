@@ -1,0 +1,80 @@
+img {
+  border-radius: 8%;
+}
+
+.movie {
+  display: grid;
+  grid-template-rows: auto 6rem 2rem;
+  grid-template-areas: "poster"
+                        "title"
+                        "add";
+  justify-items: center;
+}
+
+.title {
+  composes: subTitle from "./../../Typo.module.css";
+  font-size: 1.5rem;
+  grid-area: title;
+}
+
+.movie {
+  grid-row-start: auto;
+}
+
+.imageSeen{
+  filter: grayscale(100%);
+}
+
+.imageNeedToSee{
+  filter: grayscale(0%);
+}
+
+.buttonWatched {
+  color:white;
+  font-weight: bold;
+  font-size: .8rem;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 2rem;
+  padding: .2rem .8rem;
+  width: 8rem;
+}
+
+.buttonWatching {
+  color: var(--primary-color);
+  background-color:white; 
+  border-color: var(--primary-color);
+  border-radius: 2rem;
+  padding: .2rem .8rem;
+  width: 8rem;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.buttonWatched:hover {
+  color: var(--primary-color);
+  background-color: white;
+   
+}
+
+.buttonWatching:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.buttonDelete {
+  color:white;
+  font-weight: bold;
+  font-size: .8rem;
+  background-color: var(--delete-color);
+  border-color: var(--delete-color);
+  border-radius: 2rem;
+  padding: .2rem .8rem;
+  width: 5rem;
+}
+.buttonDelete:hover {
+  color: var(--delete-color);
+  background-color: white;
+   
+}
+

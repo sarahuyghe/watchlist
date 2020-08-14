@@ -1,0 +1,39 @@
+.navSection{
+  background-color:var(--light-gray);
+  color: var(--dark-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 2rem;
+
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row
+}
+
+li {
+  text-decoration: none;
+  padding-right: 2rem; 
+}
+
+.links{
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.logout {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.links:hover {
+  color: var(--primary-color)
+}
+

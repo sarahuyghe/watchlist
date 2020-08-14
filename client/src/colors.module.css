@@ -1,0 +1,25 @@
+:global(:root){
+  --primary-color: #1AA6A5;
+  --dark-gray: #7E7E7E;
+  --light-gray: #FAFAFA;
+  --delete-color: red;
+
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.color-gray {
+  color: var(--dark-gray);
+}
+
+.color-gray {
+  color: var(--light-gray);
+}
+
+.color-delete {
+  color: var(--delete-color);
+}
+
+

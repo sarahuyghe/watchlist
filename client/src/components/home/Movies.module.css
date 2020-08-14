@@ -1,0 +1,8 @@
+.sectionMovies {
+  margin: 0rem 5rem;
+  display: grid;
+  color: white;
+  grid-template-columns:  repeat(4, 1fr) ;
+  grid-gap: 2rem;
+}
+
